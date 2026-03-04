@@ -1,10 +1,10 @@
 import Icon from "@/components/ui/icon";
 
 const kpiCards = [
-  { label: "Активные заявки", value: "47", delta: "+12%", trend: "up", icon: "FileText", color: "#3b82f6" },
-  { label: "Выполнено за месяц", value: "124", delta: "+8%", trend: "up", icon: "CheckCircle2", color: "#22c55e" },
-  { label: "Сотрудников", value: "38", delta: "+2", trend: "up", icon: "Users", color: "#8b5cf6" },
-  { label: "Воинских частей", value: "91", delta: "+5%", trend: "up", icon: "Building2", color: "#f59e0b" },
+  { label: "Активные заявки", value: "47", delta: "+12%", trend: "up", icon: "FileText", color: "#dc2626" },
+  { label: "Выполнено за месяц", value: "124", delta: "+8%", trend: "up", icon: "CheckCircle2", color: "#f59e0b" },
+  { label: "Сотрудников", value: "38", delta: "+2", trend: "up", icon: "Users", color: "#ffffff" },
+  { label: "Воинских частей", value: "91", delta: "+5%", trend: "up", icon: "Building2", color: "#d4af37" },
 ];
 
 const topEmployees = [
@@ -23,10 +23,10 @@ const recentRequests = [
 ];
 
 const statusColors: Record<string, string> = {
-  "В работе": "#3b82f6",
+  "В работе": "#d4af37",
   "Ожидает": "#f59e0b",
   "Выполнено": "#22c55e",
-  "Отклонено": "#ef4444",
+  "Отклонено": "#dc2626",
 };
 
 const priorityColors: Record<string, string> = {
@@ -91,7 +91,7 @@ export default function DashboardPage() {
             </div>
             <div className="flex items-center gap-4 text-xs" style={{ color: "hsl(var(--muted-foreground))" }}>
               <span className="flex items-center gap-1.5">
-                <span className="w-3 h-1.5 rounded inline-block" style={{ background: "#3b82f6" }}></span>Выполнено
+                <span className="w-3 h-1.5 rounded inline-block" style={{ background: "#d4af37" }}></span>Выполнено
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-3 h-1.5 rounded inline-block" style={{ background: "#f59e0b" }}></span>В работе
@@ -141,7 +141,7 @@ export default function DashboardPage() {
                   <div className="h-full rounded-full transition-all"
                     style={{
                       width: `${dept.load}%`,
-                      background: dept.load > 80 ? "#ef4444" : dept.load > 60 ? "#f59e0b" : "#3b82f6",
+                      background: dept.load > 80 ? "#dc2626" : dept.load > 60 ? "#f59e0b" : "#d4af37",
                     }} />
                 </div>
               </div>

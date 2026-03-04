@@ -72,7 +72,7 @@ const CLIENTS: Client[] = [
 const statusConfig = {
   active:   { label: "Активный", color: "#22c55e", bg: "#22c55e18" },
   inactive: { label: "Неактивный", color: "#6b7280", bg: "#6b728018" },
-  lead:     { label: "Потенциальный", color: "#3b82f6", bg: "#3b82f618" },
+  lead:     { label: "Потенциальный", color: "#d4af37", bg: "#d4af3718" },
 };
 
 function isCertExpired(expiry: string) {

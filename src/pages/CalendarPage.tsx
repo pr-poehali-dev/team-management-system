@@ -27,9 +27,9 @@ const TASKS: Task[] = [
 ];
 
 const typeConfig = {
-  meeting: { color: "#3b82f6", bg: "#3b82f620", label: "Встреча" },
-  task:    { color: "#8b5cf6", bg: "#8b5cf620", label: "Задача" },
-  deadline:{ color: "#ef4444", bg: "#ef444420", label: "Дедлайн" },
+  meeting: { color: "#d4af37", bg: "#d4af3720", label: "Встреча" },
+  task:    { color: "#ffffff", bg: "#ffffff15", label: "Задача" },
+  deadline:{ color: "#dc2626", bg: "#dc262620", label: "Дедлайн" },
 };
 
 export default function CalendarPage() {

@@ -74,7 +74,7 @@ export default function App() {
                   style={{
                     background: active ? "hsl(var(--primary) / 0.12)" : "transparent",
                     borderLeft: active ? "2px solid hsl(var(--primary))" : "2px solid transparent",
-                    color: active ? "hsl(210 85% 72%)" : "hsl(var(--sidebar-foreground))",
+                    color: active ? "hsl(43 85% 70%)" : "hsl(var(--sidebar-foreground))",
                   }}
                 >
                   <Icon

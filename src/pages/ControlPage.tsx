@@ -44,9 +44,9 @@ export default function ControlPage() {
       <div className="grid grid-cols-5 gap-3">
         {[
           { label: "Выполнение заявок", value: "87%", icon: "TrendingUp", color: "#22c55e", sub: "за март" },
-          { label: "Просрочено", value: "7", icon: "AlertTriangle", color: "#ef4444", sub: "заявок" },
-          { label: "В работе", value: "23", icon: "Clock", color: "#3b82f6", sub: "сейчас" },
-          { label: "Ср. время выполнения", value: "4.2д", icon: "Timer", color: "#8b5cf6", sub: "на заявку" },
+          { label: "Просрочено", value: "7", icon: "AlertTriangle", color: "#dc2626", sub: "заявок" },
+          { label: "В работе", value: "23", icon: "Clock", color: "#d4af37", sub: "сейчас" },
+          { label: "Ср. время выполнения", value: "4.2д", icon: "Timer", color: "#f59e0b", sub: "на заявку" },
           { label: "Ср. KPI команды", value: "86%", icon: "Award", color: "#f59e0b", sub: "текущий месяц" },
         ].map(stat => (
           <div key={stat.label} className="rounded-lg border border-border p-4"
@@ -119,11 +119,11 @@ export default function ControlPage() {
                         <div className="h-full rounded-full"
                           style={{
                             width: `${dept.rate}%`,
-                            background: dept.rate >= 90 ? "#22c55e" : dept.rate >= 80 ? "#3b82f6" : "#f59e0b",
+                            background: dept.rate >= 90 ? "#22c55e" : dept.rate >= 80 ? "#d4af37" : "#f59e0b",
                           }} />
                       </div>
                       <span className="text-xs font-mono font-bold w-8 text-right"
-                        style={{ color: dept.rate >= 90 ? "#22c55e" : dept.rate >= 80 ? "#3b82f6" : "#f59e0b" }}>
+                        style={{ color: dept.rate >= 90 ? "#22c55e" : dept.rate >= 80 ? "#d4af37" : "#f59e0b" }}>
                         {dept.rate}%
                       </span>
                     </div>
@@ -171,13 +171,13 @@ export default function ControlPage() {
                       <div className="h-full rounded-full"
                         style={{
                           width: `${emp.kpi}%`,
-                          background: emp.kpi >= 90 ? "#22c55e" : emp.kpi >= 80 ? "#3b82f6" : "#f59e0b",
+                          background: emp.kpi >= 90 ? "#22c55e" : emp.kpi >= 80 ? "#d4af37" : "#f59e0b",
                         }} />
                     </div>
                     <div className="flex justify-between items-center mt-0.5">
                       <span style={{ color: "hsl(var(--muted-foreground))", fontSize: "10px" }}>KPI</span>
                       <span className="font-mono font-bold"
-                        style={{ color: emp.kpi >= 90 ? "#22c55e" : emp.kpi >= 80 ? "#3b82f6" : "#f59e0b", fontSize: "11px" }}>
+                        style={{ color: emp.kpi >= 90 ? "#22c55e" : emp.kpi >= 80 ? "#d4af37" : "#f59e0b", fontSize: "11px" }}>
                         {emp.kpi}%
                       </span>
                     </div>

@@ -33,10 +33,10 @@ const priorityConfig = {
 };
 
 const statusConfig = {
-  new:      { label: "Новая",     color: "#3b82f6", bg: "#3b82f618" },
+  new:      { label: "Новая",     color: "#d4af37", bg: "#d4af3718" },
   inwork:   { label: "В работе",  color: "#f59e0b", bg: "#f59e0b18" },
   done:     { label: "Выполнено", color: "#22c55e", bg: "#22c55e18" },
-  rejected: { label: "Отклонено", color: "#ef4444", bg: "#ef444418" },
+  rejected: { label: "Отклонено", color: "#dc2626", bg: "#dc262618" },
 };
 
 export default function RequestsPage() {

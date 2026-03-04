@@ -4,50 +4,57 @@
 
 @layer base {
   :root {
-    --background: 216 28% 7%;
-    --foreground: 210 20% 90%;
+    /* Тёмно-синий фон */
+    --background: 224 45% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 216 25% 10%;
-    --card-foreground: 210 20% 90%;
+    --card: 224 40% 11%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 216 25% 10%;
-    --popover-foreground: 210 20% 90%;
+    --popover: 224 40% 11%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 85% 55%;
-    --primary-foreground: 0 0% 100%;
+    /* Золотой акцент как primary */
+    --primary: 43 85% 52%;
+    --primary-foreground: 224 45% 8%;
 
-    --secondary: 216 20% 15%;
-    --secondary-foreground: 210 20% 85%;
+    --secondary: 224 35% 16%;
+    --secondary-foreground: 0 0% 85%;
 
-    --muted: 216 20% 13%;
-    --muted-foreground: 215 15% 50%;
+    --muted: 224 30% 14%;
+    --muted-foreground: 220 20% 52%;
 
-    --accent: 210 85% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 43 85% 52%;
+    --accent-foreground: 224 45% 8%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 216 18% 18%;
-    --input: 216 18% 15%;
-    --ring: 210 85% 55%;
+    --border: 224 28% 19%;
+    --input: 224 28% 16%;
+    --ring: 43 85% 52%;
 
     --radius: 0.4rem;
 
-    --sidebar-background: 216 30% 6%;
-    --sidebar-foreground: 210 15% 70%;
-    --sidebar-primary: 210 85% 55%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 216 22% 12%;
-    --sidebar-accent-foreground: 210 20% 88%;
-    --sidebar-border: 216 18% 14%;
-    --sidebar-ring: 210 85% 55%;
+    --sidebar-background: 224 50% 6%;
+    --sidebar-foreground: 0 0% 75%;
+    --sidebar-primary: 43 85% 52%;
+    --sidebar-primary-foreground: 224 45% 8%;
+    --sidebar-accent: 224 35% 13%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 224 28% 14%;
+    --sidebar-ring: 43 85% 52%;
 
     /* Custom vars */
-    --success: 142 70% 45%;
-    --warning: 38 92% 50%;
+    --success: 142 60% 42%;
+    --warning: 43 85% 52%;
     --danger: 0 72% 51%;
-    --info: 210 85% 55%;
+    --info: 213 80% 62%;
+
+    /* Цветовая схема */
+    --gold: 43 85% 52%;
+    --crimson: 0 72% 51%;
+    --navy: 224 45% 8%;
   }
 }
 
