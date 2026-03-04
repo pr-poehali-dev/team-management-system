@@ -19,7 +19,7 @@ const TASKS: Task[] = [
   { id: 2, title: "Сдача аудита Q1", date: 7, type: "deadline", assignee: "НС", time: "18:00" },
   { id: 3, title: "Планёрка технического отдела", date: 10, type: "meeting", assignee: "Все", time: "09:30" },
   { id: 4, title: "Установка оборудования REQ-2501", date: 10, type: "task", assignee: "ИД", time: "14:00" },
-  { id: 5, title: "Демо VPN для клиента", date: 15, type: "meeting", assignee: "КП", time: "11:00" },
+  { id: 5, title: "Демо VPN для воинской части", date: 15, type: "meeting", assignee: "КП", time: "11:00" },
   { id: 6, title: "Дедлайн REQ-2500", date: 7, type: "deadline", assignee: "КП", time: "17:00" },
   { id: 7, title: "Оплата лицензий MS Office", date: 20, type: "task", assignee: "СА", time: "12:00" },
   { id: 8, title: "Квартальная отчётность", date: 25, type: "deadline", assignee: "АД", time: "15:00" },

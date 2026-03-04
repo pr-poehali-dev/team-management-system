@@ -20,7 +20,7 @@ const DEPARTMENTS = ["Все отделы", "Технический отдел",
 
 const EMPLOYEES: Employee[] = [
   { id: 1, name: "Иванов Дмитрий", position: "Ведущий инженер", dept: "Технический отдел", email: "ivanov@company.ru", phone: "+7 999 123-45-67", status: "active", certified: true, certExpiry: "2027-06-15", avatar: "ИД", tasks: 24, kpi: 97 },
-  { id: 2, name: "Смирнова Анна", position: "Менеджер по клиентам", dept: "Продажи", email: "smirnova@company.ru", phone: "+7 999 234-56-78", status: "active", certified: true, certExpiry: "2026-11-30", avatar: "СА", tasks: 21, kpi: 94 },
+  { id: 2, name: "Смирнова Анна", position: "Менеджер по взаимодействию", dept: "Продажи", email: "smirnova@company.ru", phone: "+7 999 234-56-78", status: "active", certified: true, certExpiry: "2026-11-30", avatar: "СА", tasks: 21, kpi: 94 },
   { id: 3, name: "Козлов Павел", position: "Senior Developer", dept: "Разработка", email: "kozlov@company.ru", phone: "+7 999 345-67-89", status: "active", certified: true, certExpiry: "2025-12-01", avatar: "КП", tasks: 19, kpi: 91 },
   { id: 4, name: "Петрова Ольга", position: "Маркетолог", dept: "Маркетинг", email: "petrova@company.ru", phone: "+7 999 456-78-90", status: "vacation", certified: false, certExpiry: "", avatar: "ПО", tasks: 17, kpi: 88 },
   { id: 5, name: "Новиков Сергей", position: "Менеджер по продажам", dept: "Продажи", email: "novikov@company.ru", phone: "+7 999 567-89-01", status: "active", certified: true, certExpiry: "2027-03-20", avatar: "НС", tasks: 15, kpi: 85 },
@@ -113,7 +113,7 @@ export default function EmployeesPage() {
           <table className="w-full">
             <thead>
               <tr style={{ borderBottom: "1px solid hsl(var(--border))" }}>
-                {["Сотрудник", "Отдел", "Статус", "Сертификация", "KPI", "Задач", ""].map(h => (
+                {["Сотрудник", "Отдел", "Статус", "Допуск к оружию", "KPI", "Задач", ""].map(h => (
                   <th key={h} className="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wider"
                     style={{ color: "hsl(var(--muted-foreground))" }}>{h}</th>
                 ))}
@@ -224,7 +224,7 @@ export default function EmployeesPage() {
                         color: expired ? "#ef4444" : soon ? "#f59e0b" : "#22c55e",
                       }}>
                       <Icon name="BadgeCheck" size={11} />
-                      Сертификат {expired ? "истёк" : soon ? "скоро истекает" : "действует"}
+                      Допуск {expired ? "истёк" : soon ? "скоро истекает" : "действует"}
                     </div>
                   )}
                 </div>
@@ -282,14 +282,14 @@ export default function EmployeesPage() {
               <div className="rounded-lg border border-border p-4"
                 style={{ background: "hsl(var(--secondary))" }}>
                 <div className="text-xs font-semibold uppercase tracking-wider mb-3"
-                  style={{ color: "hsl(var(--muted-foreground))" }}>Сертификация</div>
+                  style={{ color: "hsl(var(--muted-foreground))" }}>Допуск к оружию</div>
                 {selected.certified ? (
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <Icon name="BadgeCheck" size={16}
                         style={{ color: isCertExpired(selected.certExpiry) ? "#ef4444" : "#22c55e" }} />
                       <span className="text-sm text-white">
-                        {isCertExpired(selected.certExpiry) ? "Сертификат истёк" : "Сертификат действителен"}
+                        {isCertExpired(selected.certExpiry) ? "Допуск истёк" : "Допуск действителен"}
                       </span>
                     </div>
                     <div className="text-xs" style={{ color: "hsl(var(--muted-foreground))" }}>
@@ -305,10 +305,10 @@ export default function EmployeesPage() {
                 ) : (
                   <div className="text-center py-2">
                     <Icon name="AlertCircle" size={24} className="mx-auto mb-1" style={{ color: "#f59e0b" }} />
-                    <p className="text-xs" style={{ color: "hsl(var(--muted-foreground))" }}>Сертификация не пройдена</p>
+                    <p className="text-xs" style={{ color: "hsl(var(--muted-foreground))" }}>Допуск не оформлен</p>
                     <button className="text-xs text-white mt-2 px-3 py-1.5 rounded transition-all hover:opacity-90"
                       style={{ background: "hsl(var(--primary))" }}>
-                      Назначить сертификацию
+                      Оформить допуск
                     </button>
                   </div>
                 )}

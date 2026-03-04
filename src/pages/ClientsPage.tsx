@@ -114,7 +114,7 @@ export default function ClientsPage() {
             <Icon name="Search" size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2"
               style={{ color: "hsl(var(--muted-foreground))" }} />
             <input value={search} onChange={e => setSearch(e.target.value)}
-              placeholder="Поиск клиентов..."
+              placeholder="Поиск воинских частей..."
               className="pl-8 pr-3 py-1.5 text-xs rounded border border-border outline-none w-44"
               style={{ background: "hsl(var(--secondary))", color: "hsl(var(--foreground))" }} />
           </div>
@@ -271,7 +271,7 @@ export default function ClientsPage() {
                                 color: expired ? "#ef4444" : "#22c55e",
                               }}>
                               <Icon name={expired ? "AlertCircle" : "BadgeCheck"} size={11} />
-                              {expired ? "Сертификат истёк" : "Сертифицирован"}
+                              {expired ? "Допуск истёк" : "Допуск действует"}
                             </span>
                           )}
                         </div>
@@ -287,7 +287,7 @@ export default function ClientsPage() {
                         </div>
                         {emp.certExpiry && (
                           <div className="text-xs mb-2" style={{ color: "hsl(var(--muted-foreground))" }}>
-                            Сертификат до: <span className="font-mono text-white">
+                            Допуск до: <span className="font-mono text-white">
                               {new Date(emp.certExpiry).toLocaleDateString("ru-RU")}
                             </span>
                           </div>

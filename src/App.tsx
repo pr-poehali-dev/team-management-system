@@ -16,7 +16,7 @@ const NAV_ITEMS: { id: Page; label: string; icon: string; badge?: number }[] = [
   { id: "requests", label: "Заявки", icon: "FileText", badge: 5 },
   { id: "calendar", label: "Календарь", icon: "CalendarDays" },
   { id: "employees", label: "Сотрудники", icon: "Users" },
-  { id: "clients", label: "Клиенты", icon: "Building2" },
+  { id: "clients", label: "Воинские части", icon: "Building2" },
   { id: "control", label: "Контроль", icon: "BarChart3" },
 ];
 

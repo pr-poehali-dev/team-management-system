@@ -111,7 +111,7 @@ export default function RequestsPage() {
         <table className="w-full">
           <thead>
             <tr style={{ borderBottom: "1px solid hsl(var(--border))" }}>
-              {["№ Заявки", "Название", "Клиент", "Приоритет", "Статус", "Исполнитель", "Дедлайн", ""].map((h) => (
+              {["№ Заявки", "Название", "Воинская часть", "Приоритет", "Статус", "Исполнитель", "Дедлайн", ""].map((h) => (
                 <th key={h} className="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wider"
                   style={{ color: "hsl(var(--muted-foreground))" }}>
                   {h}

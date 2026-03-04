@@ -4,12 +4,12 @@ const kpiCards = [
   { label: "Активные заявки", value: "47", delta: "+12%", trend: "up", icon: "FileText", color: "#3b82f6" },
   { label: "Выполнено за месяц", value: "124", delta: "+8%", trend: "up", icon: "CheckCircle2", color: "#22c55e" },
   { label: "Сотрудников", value: "38", delta: "+2", trend: "up", icon: "Users", color: "#8b5cf6" },
-  { label: "Клиентов", value: "91", delta: "+5%", trend: "up", icon: "Building2", color: "#f59e0b" },
+  { label: "Воинских частей", value: "91", delta: "+5%", trend: "up", icon: "Building2", color: "#f59e0b" },
 ];
 
 const topEmployees = [
   { name: "Иванов Дмитрий", dept: "Технический отдел", tasks: 24, kpi: 97 },
-  { name: "Смирнова Анна", dept: "Клиентский сервис", tasks: 21, kpi: 94 },
+  { name: "Смирнова Анна", dept: "Отдел взаимодействия", tasks: 21, kpi: 94 },
   { name: "Козлов Павел", dept: "Разработка", tasks: 19, kpi: 91 },
   { name: "Петрова Ольга", dept: "Маркетинг", tasks: 17, kpi: 88 },
   { name: "Новиков Сергей", dept: "Продажи", tasks: 15, kpi: 85 },
