@@ -16,7 +16,7 @@ interface Employee {
   kpi: number;
 }
 
-const DEPARTMENTS = ["Все отделы", "Технический отдел", "Разработка", "Продажи", "Маркетинг", "HR", "Бухгалтерия"];
+const DEPARTMENTS = ["Центр", "1 группа", "2 группа", "3 группа", "4 группа", "5 группа, "6 отдел"];
 
 const EMPLOYEES: Employee[] = [
   { id: 1, name: "Иванов Дмитрий", position: "Ведущий инженер", dept: "Технический отдел", email: "ivanov@company.ru", phone: "+7 999 123-45-67", status: "active", certified: true, certExpiry: "2027-06-15", avatar: "ИД", tasks: 24, kpi: 97 },
