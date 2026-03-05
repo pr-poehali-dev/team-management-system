@@ -16,17 +16,12 @@ interface Employee {
   kpi: number;
 }
 
-const DEPARTMENTS = ["Центр", "1 группа", "2 группа", "3 группа", "4 группа", "5 группа, "6 отдел"];
+const DEPARTMENTS = ["Центр", "1 группа", "2 группа", "3 группа", "4 группа", "5 группа" , "6 отдел"];
 
 const EMPLOYEES: Employee[] = [
-  { id: 1, name: "Иванов Дмитрий", position: "Ведущий инженер", dept: "Технический отдел", email: "ivanov@company.ru", phone: "+7 999 123-45-67", status: "active", certified: true, certExpiry: "2027-06-15", avatar: "ИД", tasks: 24, kpi: 97 },
-  { id: 2, name: "Смирнова Анна", position: "Менеджер по взаимодействию", dept: "Продажи", email: "smirnova@company.ru", phone: "+7 999 234-56-78", status: "active", certified: true, certExpiry: "2026-11-30", avatar: "СА", tasks: 21, kpi: 94 },
-  { id: 3, name: "Козлов Павел", position: "Senior Developer", dept: "Разработка", email: "kozlov@company.ru", phone: "+7 999 345-67-89", status: "active", certified: true, certExpiry: "2025-12-01", avatar: "КП", tasks: 19, kpi: 91 },
-  { id: 4, name: "Петрова Ольга", position: "Маркетолог", dept: "Маркетинг", email: "petrova@company.ru", phone: "+7 999 456-78-90", status: "vacation", certified: false, certExpiry: "", avatar: "ПО", tasks: 17, kpi: 88 },
-  { id: 5, name: "Новиков Сергей", position: "Менеджер по продажам", dept: "Продажи", email: "novikov@company.ru", phone: "+7 999 567-89-01", status: "active", certified: true, certExpiry: "2027-03-20", avatar: "НС", tasks: 15, kpi: 85 },
-  { id: 6, name: "Фёдорова Мария", position: "HR-специалист", dept: "HR", email: "fedorova@company.ru", phone: "+7 999 678-90-12", status: "active", certified: false, certExpiry: "", avatar: "ФМ", tasks: 12, kpi: 82 },
-  { id: 7, name: "Орлов Александр", position: "Системный администратор", dept: "Технический отдел", email: "orlov@company.ru", phone: "+7 999 789-01-23", status: "sick", certified: true, certExpiry: "2026-08-10", avatar: "ОА", tasks: 10, kpi: 78 },
-  { id: 8, name: "Лебедева Наталья", position: "Бухгалтер", dept: "Бухгалтерия", email: "lebedeva@company.ru", phone: "+7 999 890-12-34", status: "active", certified: false, certExpiry: "", avatar: "ЛН", tasks: 8, kpi: 75 },
+  { id: 1, name: "Дритатун", position: "психолог", dept: "5 группа", email: "ivanov@company.ru", phone: "+7 999 123-45-67", status: "active", certified: true, certExpiry: "2027-06-15", avatar: "ИД", tasks: 24, kpi: 97 },
+  { id: 2, name: "Босс", position: "самая главная", dept: "5 группа", email: "smirnova@company.ru", phone: "+7 999 234-56-78", status: "active", certified: true, certExpiry: "2026-11-30", avatar: "СА", tasks: 21, kpi: 94 },
+  { id: 3, name: "Таракан архивариус", position: "мини босс", dept: "5 группа", email: "kozlov@company.ru", phone: "+7 999 345-67-89", status: "active", certified: true,
 ];
 
 const statusConfig = {
