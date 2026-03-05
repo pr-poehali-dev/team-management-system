@@ -8,6 +8,7 @@ import CalendarPage from "@/pages/CalendarPage";
 import EmployeesPage from "@/pages/EmployeesPage";
 import ClientsPage from "@/pages/ClientsPage";
 import ControlPage from "@/pages/ControlPage";
+import ReportsPage from "@/pages/ReportsPage";
 
 type Page =
   | "dashboard"
@@ -15,7 +16,8 @@ type Page =
   | "calendar"
   | "employees"
   | "clients"
-  | "control";
+  | "control"
+  | "reports";
 
 const NAV_ITEMS: { id: Page; label: string; icon: string; badge?: number }[] = [
   { id: "dashboard", label: "Аналитика", icon: "LayoutDashboard" },
@@ -24,6 +26,7 @@ const NAV_ITEMS: { id: Page; label: string; icon: string; badge?: number }[] = [
   { id: "employees", label: "Сотрудники", icon: "Users" },
   { id: "clients", label: "Воинские части", icon: "Building2" },
   { id: "control", label: "Контроль", icon: "BarChart3" },
+  { id: "reports", label: "Отчёты частей", icon: "ClipboardList" },
 ];
 
 export default function App() {
@@ -44,6 +47,8 @@ export default function App() {
         return <ClientsPage />;
       case "control":
         return <ControlPage />;
+      case "reports":
+        return <ReportsPage />;
     }
   };
 
